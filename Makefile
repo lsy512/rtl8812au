@@ -168,7 +168,7 @@ CONFIG_PLATFORM_PPC = n
 
 CONFIG_DRVEXT_MODULE = n
 
-export TopDIR1 ?= "/root/HandsomeMod/build_dir/target-arm_cortex-a7+neon-vfpv4_musl_eabi/linux-sunxi_cortexa7/rtl8812au-ac-v5.2.20"
+export TopDIR1 ?= /root/HandsomeMod/build_dir/target-arm_cortex-a7+neon-vfpv4_musl_eabi/linux-sunxi_cortexa7/rtl8812au-ac-v5.2.20
 
 ########### COMMON  #################################
 ifeq ($(CONFIG_DISABLE_REGD_C), y)
