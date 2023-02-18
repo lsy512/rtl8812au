@@ -168,7 +168,7 @@ CONFIG_PLATFORM_PPC = n
 
 CONFIG_DRVEXT_MODULE = n
 
-export TopDIR ?= $(shell pwd)
+export TopDIR1 ?= $(shell pwd)
 
 ########### COMMON  #################################
 ifeq ($(CONFIG_DISABLE_REGD_C), y)
@@ -291,7 +291,7 @@ _BTC_FILES += hal/btc/halbtc8192e1ant.o \
 				hal/btc/halbtc8821c2ant.o
 endif
 
-include $(TopDIR)/hal/phydm/phydm.mk
+include $(TopDIR1)/hal/phydm/phydm.mk
 
 ########### HAL_RTL8812A_RTL8821A #################################
 ifneq ($(CONFIG_RTL8812A)_$(CONFIG_RTL8821A), n_n)
